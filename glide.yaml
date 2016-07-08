@@ -1,0 +1,6 @@
+package: github.com/jghiloni/do-all
+import:
+- package: github.com/cloudfoundry/cli
+  subpackages:
+  - plugin
+- package: github.com/xchapter7x/lo

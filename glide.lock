@@ -1,0 +1,13 @@
+hash: 750742797b911c32961ad42eb109742cbe19ee659c469d67f93e80d6578516eb
+updated: 2016-07-07T22:04:43.66045025-05:00
+imports:
+- name: github.com/cloudfoundry/cli
+  version: 32ef774890eb79809f14362a294209ff80dd2f0d
+  subpackages:
+  - plugin
+  - plugin/models
+- name: github.com/op/go-logging
+  version: 970db520ece77730c7e4724c61121037378659d9
+- name: github.com/xchapter7x/lo
+  version: aa2602d0e8e8647f0ce7b53109b37040941915aa
+devImports: []

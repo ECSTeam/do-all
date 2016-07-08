@@ -5,7 +5,7 @@ A CloudFoundry CLI Plugin that runs a given command on all apps in a given space
 
 Fetch binary for your architecture from Releases
 
-cf install-plugin ./do-all-plugin-<arch>
+`cf install-plugin ./do-all-plugin-<arch>`
 
 ## Run
 

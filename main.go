@@ -7,7 +7,7 @@ import (
 
 var (
 	// Version the current version of the plugin
-	Version = "1.0.0"
+	Version = "1.0.1"
 )
 
 func main() {

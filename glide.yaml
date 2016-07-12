@@ -1,4 +1,4 @@
-package: github.com/jghiloni/do-all
+package: github.com/ecsteam/do-all
 import:
 - package: github.com/cloudfoundry/cli
   subpackages:

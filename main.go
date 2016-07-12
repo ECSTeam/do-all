@@ -1,10 +1,8 @@
 package main
 
 import (
-	"os"
-
 	"github.com/cloudfoundry/cli/plugin"
-	"github.com/jghiloni/do-all/repeater"
+	"github.com/ecsteam/do-all/repeater"
 )
 
 var (
@@ -15,7 +13,6 @@ var (
 func main() {
 	doAll := &repeater.Repeater{
 		Version: Version,
-		Writer:  os.Stdout,
 	}
 
 	plugin.Start(doAll)

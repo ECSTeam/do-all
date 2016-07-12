@@ -20,7 +20,12 @@ type Repeater struct {
 }
 
 // Run execute the plugin
-func (c *Repeater) Run(cliConnection plugin.CliConnection, args []string) {
+func (c *Repeater) Run(cli plugin.CliConnection, args []string) {
+	if len(args) < 2 {
+		fmt.Printf("You have to tell do-all to do something!")
+		lo.G.Panic("You have to tell do-all to do something!")
+	}
+
 	args = args[1:]
 
 	idx := -1
@@ -31,13 +36,13 @@ func (c *Repeater) Run(cliConnection plugin.CliConnection, args []string) {
 		}
 	}
 	/*
-		currentSpace, err := cliConnection.GetCurrentSpace()
+		currentSpace, err := cli.GetCurrentSpace()
 		if err != nil {
 			lo.G.Panic("PLUGIN ERROR: Could not determine current space: ", err)
 			return
 		} */
 
-	apps, err := cliConnection.GetApps()
+	apps, err := cli.GetApps()
 	if err != nil {
 		lo.G.Panic("PLUGIN ERROR: get apps: ", err)
 		return
@@ -48,7 +53,16 @@ func (c *Repeater) Run(cliConnection plugin.CliConnection, args []string) {
 			args[idx] = app.Name
 		}
 
-		cliConnection.CliCommand(args...)
+		var cmdOutput []string
+		if cmdOutput, err = cli.CliCommand(args...); err != nil {
+			lo.G.Panic(err)
+		}
+
+		if c.Writer != nil {
+			for _, line := range cmdOutput {
+				fmt.Fprint(c.Writer, line)
+			}
+		}
 	}
 }
 

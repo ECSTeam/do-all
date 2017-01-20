@@ -5,15 +5,8 @@ import (
 	"github.com/ecsteam/do-all/repeater"
 )
 
-var (
-	// Version the current version of the plugin
-	Version = "1.0.1"
-)
-
 func main() {
-	doAll := &repeater.Repeater{
-		Version: Version,
-	}
+	doAll := &repeater.Repeater{}
 
 	plugin.Start(doAll)
 }

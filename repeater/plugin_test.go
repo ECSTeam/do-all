@@ -5,7 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cloudfoundry/cli/plugin/models"
+	"code.cloudfoundry.org/cli/plugin/models"
+
 	"github.com/cloudfoundry/cli/plugin/pluginfakes"
 	. "github.com/ecsteam/do-all/repeater"
 	. "github.com/onsi/ginkgo"

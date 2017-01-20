@@ -1,0 +1,14 @@
+---
+platform: linux
+
+image: docker:///golang#1.7-alpine
+
+inputs:
+- name: source
+  path: gopath/src/github.com/ecsteam/do-all
+
+outputs:
+- name: gopath-tested
+
+run:
+  path: gopath/src/github.com/ecsteam/do-all/ci/tasks/do-test.sh

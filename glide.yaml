@@ -1,6 +1,14 @@
 package: github.com/ecsteam/do-all
 import:
+- package: code.cloudfoundry.org/cli
+  subpackages:
+  - cf/models
+  - plugin/models
 - package: github.com/cloudfoundry/cli
   subpackages:
   - plugin
+- package: github.com/krujos/cfcurl
 - package: github.com/xchapter7x/lo
+testImport:
+- package: github.com/onsi/ginkgo
+- package: github.com/onsi/gomega

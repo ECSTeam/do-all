@@ -33,6 +33,10 @@ type orgInfo struct {
 
 // Run execute the plugin
 func (c *Repeater) Run(cli plugin.CliConnection, args []string) {
+	if args[0] != c.GetMetadata().Commands[0].Name {
+		return
+	}
+
 	var firstArg = args[1]
 
 	var orgInfos []orgInfo

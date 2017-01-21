@@ -125,7 +125,9 @@ func (c *Repeater) GetVersionType() plugin.VersionType {
 	}
 }
 
-func (c *Repeater) runCommands(cli plugin.CliConnection, orgName string, spaceName string, args []string) {
+func (c *Repeater) runCommands(cli plugin.CliConnection, orgName string, spaceName string, originalArgs []string) {
+	args := append([]string(nil), originalArgs...)
+
 	idx := -1
 	for i, arg := range args {
 		if arg == placeholder {
@@ -185,7 +187,7 @@ func (c *Repeater) getAllOrgsAndSpaces(cli plugin.CliConnection, global bool) ([
 			return nil, err
 		}
 
-		orgs = make([]models.OrganizationFields, len(orgModels))
+		orgs = make([]models.OrganizationFields, 0, len(orgModels))
 		for _, model := range orgModels {
 			orgs = append(orgs, models.OrganizationFields{
 				Name: model.Name,
@@ -199,10 +201,10 @@ func (c *Repeater) getAllOrgsAndSpaces(cli plugin.CliConnection, global bool) ([
 		}
 
 		orgs = make([]models.OrganizationFields, 1)
-		orgs = append(orgs, models.OrganizationFields{
+		orgs[0] = models.OrganizationFields{
 			Name: currentOrg.Name,
 			GUID: currentOrg.Guid,
-		})
+		}
 	}
 
 	orgInfos = make([]orgInfo, len(orgs))
@@ -210,7 +212,7 @@ func (c *Repeater) getAllOrgsAndSpaces(cli plugin.CliConnection, global bool) ([
 		var nextURL interface{}
 		nextURL = "/v2/spaces?q=organization_guid+IN+" + org.GUID
 
-		spaceNames := make([]string, 5)
+		spaceNames := make([]string, 0)
 		for nextURL != nil {
 			json, err := cfcurl.Curl(cli, nextURL.(string))
 

@@ -1,0 +1,33 @@
+{
+   "total_results": 1,
+   "total_pages": 1,
+   "prev_url": null,
+   "next_url": null,
+   "resources": [
+      {
+         "metadata": {
+            "guid": "61a9adb6-508d-49c3-8edf-89425692da58",
+            "url": "/v2/spaces/61a9adb6-508d-49c3-8edf-89425692da58",
+            "created_at": "2017-01-10T23:58:07Z",
+            "updated_at": null
+         },
+         "entity": {
+            "name": "redis-smoke-test-space",
+            "organization_guid": "e506b030-9762-4ca4-bcac-530431480234",
+            "space_quota_definition_guid": null,
+            "allow_ssh": true,
+            "organization_url": "/v2/organizations/e506b030-9762-4ca4-bcac-530431480234",
+            "developers_url": "/v2/spaces/61a9adb6-508d-49c3-8edf-89425692da58/developers",
+            "managers_url": "/v2/spaces/61a9adb6-508d-49c3-8edf-89425692da58/managers",
+            "auditors_url": "/v2/spaces/61a9adb6-508d-49c3-8edf-89425692da58/auditors",
+            "apps_url": "/v2/spaces/61a9adb6-508d-49c3-8edf-89425692da58/apps",
+            "routes_url": "/v2/spaces/61a9adb6-508d-49c3-8edf-89425692da58/routes",
+            "domains_url": "/v2/spaces/61a9adb6-508d-49c3-8edf-89425692da58/domains",
+            "service_instances_url": "/v2/spaces/61a9adb6-508d-49c3-8edf-89425692da58/service_instances",
+            "app_events_url": "/v2/spaces/61a9adb6-508d-49c3-8edf-89425692da58/app_events",
+            "events_url": "/v2/spaces/61a9adb6-508d-49c3-8edf-89425692da58/events",
+            "security_groups_url": "/v2/spaces/61a9adb6-508d-49c3-8edf-89425692da58/security_groups"
+         }
+      }
+   ]
+}

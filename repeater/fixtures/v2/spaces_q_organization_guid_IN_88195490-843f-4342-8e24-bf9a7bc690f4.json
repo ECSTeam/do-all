@@ -1,0 +1,58 @@
+{
+   "total_results": 2,
+   "total_pages": 1,
+   "prev_url": null,
+   "next_url": null,
+   "resources": [
+      {
+         "metadata": {
+            "guid": "3b6185ca-9e4d-4802-a440-a3d4ba8725ba",
+            "url": "/v2/spaces/3b6185ca-9e4d-4802-a440-a3d4ba8725ba",
+            "created_at": "2017-01-14T22:31:59Z",
+            "updated_at": null
+         },
+         "entity": {
+            "name": "development",
+            "organization_guid": "88195490-843f-4342-8e24-bf9a7bc690f4",
+            "space_quota_definition_guid": null,
+            "allow_ssh": true,
+            "organization_url": "/v2/organizations/88195490-843f-4342-8e24-bf9a7bc690f4",
+            "developers_url": "/v2/spaces/3b6185ca-9e4d-4802-a440-a3d4ba8725ba/developers",
+            "managers_url": "/v2/spaces/3b6185ca-9e4d-4802-a440-a3d4ba8725ba/managers",
+            "auditors_url": "/v2/spaces/3b6185ca-9e4d-4802-a440-a3d4ba8725ba/auditors",
+            "apps_url": "/v2/spaces/3b6185ca-9e4d-4802-a440-a3d4ba8725ba/apps",
+            "routes_url": "/v2/spaces/3b6185ca-9e4d-4802-a440-a3d4ba8725ba/routes",
+            "domains_url": "/v2/spaces/3b6185ca-9e4d-4802-a440-a3d4ba8725ba/domains",
+            "service_instances_url": "/v2/spaces/3b6185ca-9e4d-4802-a440-a3d4ba8725ba/service_instances",
+            "app_events_url": "/v2/spaces/3b6185ca-9e4d-4802-a440-a3d4ba8725ba/app_events",
+            "events_url": "/v2/spaces/3b6185ca-9e4d-4802-a440-a3d4ba8725ba/events",
+            "security_groups_url": "/v2/spaces/3b6185ca-9e4d-4802-a440-a3d4ba8725ba/security_groups"
+         }
+      },
+      {
+         "metadata": {
+            "guid": "d33a8135-5e43-443d-a724-c5b7a677f55d",
+            "url": "/v2/spaces/d33a8135-5e43-443d-a724-c5b7a677f55d",
+            "created_at": "2017-01-21T02:12:48Z",
+            "updated_at": null
+         },
+         "entity": {
+            "name": "plugintest",
+            "organization_guid": "88195490-843f-4342-8e24-bf9a7bc690f4",
+            "space_quota_definition_guid": null,
+            "allow_ssh": true,
+            "organization_url": "/v2/organizations/88195490-843f-4342-8e24-bf9a7bc690f4",
+            "developers_url": "/v2/spaces/d33a8135-5e43-443d-a724-c5b7a677f55d/developers",
+            "managers_url": "/v2/spaces/d33a8135-5e43-443d-a724-c5b7a677f55d/managers",
+            "auditors_url": "/v2/spaces/d33a8135-5e43-443d-a724-c5b7a677f55d/auditors",
+            "apps_url": "/v2/spaces/d33a8135-5e43-443d-a724-c5b7a677f55d/apps",
+            "routes_url": "/v2/spaces/d33a8135-5e43-443d-a724-c5b7a677f55d/routes",
+            "domains_url": "/v2/spaces/d33a8135-5e43-443d-a724-c5b7a677f55d/domains",
+            "service_instances_url": "/v2/spaces/d33a8135-5e43-443d-a724-c5b7a677f55d/service_instances",
+            "app_events_url": "/v2/spaces/d33a8135-5e43-443d-a724-c5b7a677f55d/app_events",
+            "events_url": "/v2/spaces/d33a8135-5e43-443d-a724-c5b7a677f55d/events",
+            "security_groups_url": "/v2/spaces/d33a8135-5e43-443d-a724-c5b7a677f55d/security_groups"
+         }
+      }
+   ]
+}

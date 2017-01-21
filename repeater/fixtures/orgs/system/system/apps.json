@@ -1,0 +1,14 @@
+[
+{ "Name": "app-usage-scheduler"},
+{ "Name": "app-usage-scheduler-venerable"},
+{ "Name": "app-usage-server"},
+{ "Name": "app-usage-server-venerable"},
+{ "Name": "app-usage-worker"},
+{ "Name": "app-usage-worker-venerable"},
+{ "Name": "apps-manager-js"},
+{ "Name": "apps-manager-js-venerable"},
+{ "Name": "p-invitations"},
+{ "Name": "p-invitations-venerable"},
+{ "Name": "php-demo"},
+{ "Name": "spring-music"}
+]

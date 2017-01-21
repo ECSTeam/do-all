@@ -1,0 +1,28 @@
+[{
+  "Name": "system",
+  "Guid": "518aca77-cd79-4eec-a3ab-740511b14e75"
+},
+{
+  "Name": "redis-smoke-test-org",
+  "Guid": "e506b030-9762-4ca4-bcac-530431480234"
+},
+{
+  "Name": "apps1",
+  "Guid": "b48bfdfc-4407-4329-9443-b3d66fa22a46"
+},
+{
+  "Name": "p-spring-cloud-services",
+  "Guid": "08aa6d22-b50f-429b-b13a-578ac7f8e2cb"
+},
+{
+  "Name": "ecsteam",
+  "Guid": "88195490-843f-4342-8e24-bf9a7bc690f4"
+},
+{
+  "Name": "spinnaker",
+  "Guid": "e935d950-2cdf-4941-8614-58d40b4739e3"
+},
+{
+  "Name": "sandbox",
+  "Guid": "0d2979a9-ec8d-4785-9066-333e2e3fb8fc"
+}]

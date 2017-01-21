@@ -22,6 +22,20 @@ resources:
     repository: do-all
     access_token: {{github-access-token}}
 jobs:
+- name: bump-minor
+  public: true
+  plan:
+  - get: version
+    params: { bump: minor }
+  - put: version
+    params: { file: version/number }
+- name: bump-major
+  public: true
+  plan:
+  - get: version
+    params: { bump: major }
+  - put: version
+    params: { file: version/number }
 - name: test-and-build
   plan:
   - get: source
